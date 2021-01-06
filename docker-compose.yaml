@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  r:
+    build: .
+    ports:
+      - "8798:8787"
+    volumes:
+      - .:/home/rstudio/timor-management-dashboard
+    environment:
+      DISABLE_AUTH: "true"
